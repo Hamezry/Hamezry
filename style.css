@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+  background-color:rgb(230, 87, 5) ;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-album{
+    text-align: center;
+
+}
+
+.song-title{
+    padding: 10px;
+    font-weight: 600;
+}
+
+.artist{
+    color: silver;
+}
+
+.album-cover-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.fa-step-backward,
+.fa-step-forward{
+    font-size: 20px;
+}
+.fa-play-circle,
+.fa-pause-circle{
+    font-size: 50px;
+    color: rgb(247, 115, 39);
+}
+
+.fa-step-backward,
+.fa-step-forward,
+.fa-play-circle:hover{
+    cursor: pointer;
+}
+
+.music-app{
+    border: 1px solid #ccc;
+    height: 550px;
+    width: 340px;
+    background: rgb(245, 239, 235);
+    border-radius: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.music-content{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.music-controls{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 50px 40px 50px 40px;
+    align-items: center;
+}
+
+
+.rotate{
+    animation: rotateFrame 4s linear infinite;
+}
+@keyframes rotateFrame{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+ .music-content audio::-webkit-media-controls-play-button{
+    display: none;
+}
