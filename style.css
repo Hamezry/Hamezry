@@ -94,3 +94,13 @@
  .music-content audio::-webkit-media-controls-play-button{
     display: none;
 }
+
+@media screen and (max-width: 400px){
+    .music-app {
+        height: 520;
+        width: 300px;
+    }
+
+}
+
+    
